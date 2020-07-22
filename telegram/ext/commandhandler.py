@@ -137,10 +137,6 @@ class CommandHandler(Handler):
             pass_user_data=pass_user_data,
             pass_chat_data=pass_chat_data)
 
-        self.description = description
-        if self.description is not None and not 3 <= len(self.description) <= 256:
-            raise ValueError('Command description is not valid.')
-
         if isinstance(command, string_types):
             self.command = [command.lower()]
         else:
