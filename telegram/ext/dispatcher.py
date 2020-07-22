@@ -550,12 +550,12 @@ class Dispatcher(object):
                 set. Defaults to :obj:`True`.
             delete (:obj:`bool`, optional): Whether to delete commands, which are currently set but
                 don't have a corresponding :class:`telegram.ext.CommandHandler` listening for that
-                command. Defaults to :obj:`True`.
+                command. Defaults to :obj:`False`.
             skip_empty (:obj:`bool`, optional): Whether to skip
                 :class:`telegram.ext.CommandHandler` s with an empty description. If :obj:`False`,
                 empty descriptions will be replaced by ``Command "<command>"``.
             alphabetical (:obj:`bool`, optional): Whether to sort commands by alphabetical order.
-                If :obj:`False`, commands are sorted in the same order, in with :meth:`add_handler`
+                If :obj:`False`, commands are sorted in the same order, in which :meth:`add_handler`
                 is invoked. If :attr:`delete` is :obj:`False`, commands without corresponding
                 handler will be last. Defaults to :obj:`False`.
         """
